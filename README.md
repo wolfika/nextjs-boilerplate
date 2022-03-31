@@ -30,6 +30,10 @@ Runs tests using Jest.
 
 Runs the TypeScript compiler to see if there are any type errors.
 
+### `yarn studio`
+
+Runs Prisma Studio, which lets you explore the database through a web UI.
+
 ## Local environment
 
 The project contains a `docker-compose.yml` file which is capable of setting up a local environment for development and testing purposes.
