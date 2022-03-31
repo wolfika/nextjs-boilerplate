@@ -15,8 +15,12 @@
     "studio": "prisma studio"
   },
   "dependencies": {
+    "@chakra-ui/react": "^1.8.7",
+    "@emotion/react": "^11",
+    "@emotion/styled": "^11",
     "@next-auth/prisma-adapter": "^1.0.3",
     "@prisma/client": "^3.11.1",
+    "framer-motion": "^6",
     "next": "12.1.2",
     "next-auth": "^4.3.1",
     "nodemailer": "^6.7.3",
