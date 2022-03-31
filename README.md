@@ -32,7 +32,7 @@ Runs the TypeScript compiler to see if there are any type errors.
 
 ### `yarn studio`
 
-Runs Prisma Studio, which lets you explore the database through a web UI.
+Runs Prisma Studio, which lets you explore the database through a web UI at http://localhost:5555.
 
 ## Local environment
 
