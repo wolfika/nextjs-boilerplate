@@ -29,3 +29,24 @@ Runs tests using Jest.
 ### `yarn type-check`
 
 Runs the TypeScript compiler to see if there are any type errors.
+
+## Local environment
+
+The project contains a `docker-compose.yml` file which is capable of setting up a local environment for development and testing purposes.
+
+### Setup
+
+1. Copy `.env.example` to `.env`.
+1. Run `docker-compose up -d` to start the Docker containers.
+1. Run `yarn prisma db push` to make Prisma initialize the database.
+1. Now you're ready to run `yarn dev` to start the Next.js server.
+
+### Features
+
+#### Database
+
+Hosts a local Postgres database. Credentials are set based on the value in `.env`
+
+#### Mailhog
+
+Hosts a local mail server that catches all outgoing mail, and displays them in a web UI. The web UI is accessible at http://localhost:8025.
