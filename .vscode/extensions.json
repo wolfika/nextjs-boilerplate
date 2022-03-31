@@ -4,7 +4,7 @@
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
     "prisma.prisma",
-    "jpoissonnier.vscode-styled-components",
+    "styled-components.vscode-styled-components",
     "ms-vscode.vscode-typescript-next"
   ]
 }
