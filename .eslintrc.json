@@ -1,0 +1,42 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "testing-library"],
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/recommended",
+    "plugin:import/typescript",
+    "next",
+    "plugin:prettier/recommended"
+  ],
+  "rules": {
+    "import/order": [
+      "error",
+      {
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc"
+        }
+      }
+    ],
+    "import/no-named-as-default": 0,
+    "@typescript-eslint/no-non-null-assertion": 0
+  },
+  "settings": {
+    "import/resolver": "eslint-import-resolver-typescript"
+  },
+  "overrides": [
+    // Only uses Testing Library lint rules in test files
+    {
+      "files": ["**/__tests__/**/*.[jt]s?(x)", "**/?(*.)+(spec|test).[jt]s?(x)"],
+      "extends": [
+        "plugin:@next/next/recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:import/recommended",
+        "plugin:import/typescript",
+        "plugin:testing-library/react",
+        "plugin:prettier/recommended"
+      ]
+    }
+  ]
+}
